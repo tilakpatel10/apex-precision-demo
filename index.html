@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Precision Components | CNC Machining & Industrial Parts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-50 bg-slate-900 text-white shadow">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-wide">
+        APEX <span class="text-amber-400">PRECISION</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+        <a href="#capabilities" class="hover:text-white">Capabilities</a>
+        <a href="#catalog" class="hover:text-white">Product Catalog</a>
+        <a href="#quality" class="hover:text-white">Quality & ISO</a>
+        <a href="#rfq" class="hover:text-white">Request Quote</a>
+      </nav>
+      <a href="#rfq" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold text-sm px-4 py-2 rounded">
+        Get a Quote
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-slate-900 text-white py-20 px-4 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="inline-block bg-amber-500/20 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+          ISO 9001:2015 CERTIFIED • TOLERANCE UP TO ±0.005 MM
+        </span>
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
+          Custom CNC Turned & Milled Components for OEMs
+        </h1>
+        <p class="text-slate-300 mb-8 leading-relaxed">
+          High-precision stainless steel, brass, and alloy steel parts manufactured for automotive, hydraulic, and industrial automation sectors with on-time batch delivery.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#rfq" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold px-6 py-3 rounded">
+            Submit Drawing / RFQ
+          </a>
+          <a href="#catalog" class="border border-slate-600 hover:border-white px-6 py-3 rounded font-medium">
+            Browse Catalog
+          </a>
+        </div>
+      </div>
+
+      <!-- Key Metrics Box -->
+      <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 grid grid-cols-2 gap-6">
+        <div>
+          <p class="text-3xl font-bold text-amber-400">±0.005mm</p>
+          <p class="text-sm text-slate-300 mt-1">Machining Accuracy</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-amber-400">18+</p>
+          <p class="text-sm text-slate-300 mt-1">CNC Turning & VMC Centers</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-amber-400">50–50k</p>
+          <p class="text-sm text-slate-300 mt-1">Prototype to Mass Batch Size</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-amber-400">24 Hrs</p>
+          <p class="text-sm text-slate-300 mt-1">RFQ Turnaround Time</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section -->
+  <section id="capabilities" class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">Manufacturing Capabilities</h2>
+    <p class="text-slate-600 mb-8">End-to-end machining, threading, surface finishing, and CMM inspection.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+        <h3 class="font-bold text-lg mb-2">CNC Turning</h3>
+        <p class="text-sm text-slate-600">Bar capacity Ø 6mm to 250mm across SS304, SS316, EN8, EN19, Brass, and Aluminium 6061.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+        <h3 class="font-bold text-lg mb-2">4-Axis VMC Milling</h3>
+        <p class="text-sm text-slate-600">Complex housings, manifolds, flanges, and precision brackets with tight geometric tolerances.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+        <h3 class="font-bold text-lg mb-2">Quality Assurance</h3>
+        <p class="text-sm text-slate-600">100% batch traceability, material test certificates (MTC), surface roughness & CMM reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filterable Product Catalog -->
+  <section id="catalog" class="py-16 px-4 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Component Catalog</h2>
+          <p class="text-slate-600 text-sm mt-1">Filter by category or search by part code / material.</p>
+        </div>
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search part name or material..."
+          class="border border-slate-300 rounded px-4 py-2 text-sm w-full md:w-72 focus:outline-none focus:border-slate-900"
+        />
+      </div>
+
+      <!-- Filter Buttons -->
+      <div id="filterButtons" class="flex flex-wrap gap-2 mb-8">
+        <button data-filter="all" class="filter-btn bg-slate-900 text-white px-4 py-1.5 rounded text-sm font-medium">All Parts</button>
+        <button data-filter="hydraulic" class="filter-btn bg-slate-100 text-slate-700 px-4 py-1.5 rounded text-sm font-medium">Hydraulic Fittings</button>
+        <button data-filter="automotive" class="filter-btn bg-slate-100 text-slate-700 px-4 py-1.5 rounded text-sm font-medium">Automotive Shafts</button>
+        <button data-filter="valves" class="filter-btn bg-slate-100 text-slate-700 px-4 py-1.5 rounded text-sm font-medium">Valve Bodies</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Quality Strip -->
+  <section id="quality" class="py-12 px-4 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-xl font-bold">Strict Inspection & Export-Ready Packaging</h3>
+        <p class="text-slate-300 text-sm mt-1">RoHS compliant materials • Custom VCI anti-rust packaging • Pan-India & Global dispatch</p>
+      </div>
+      <a href="#rfq" class="bg-amber-500 text-slate-950 font-semibold px-5 py-2.5 rounded text-sm">
+        Request Sample Batch
+      </a>
+    </div>
+  </section>
+
+  <!-- Request for Quote (RFQ) Form -->
+  <section id="rfq" class="py-16 px-4 max-w-3xl mx-auto">
+    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+      <h2 class="text-2xl font-bold text-slate-900 mb-2">Request a Manufacturing Quote (RFQ)</h2>
+      <p class="text-slate-600 text-sm mb-6">Share your component requirements and our engineering team will respond within 24 hours.</p>
+
+      <form id="rfqForm" class="space-y-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Full Name *</label>
+            <input type="text" id="clientName" required class="w-full border border-slate-300 rounded px-3 py-2 text-sm" placeholder="Rohan Shah" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Company Name *</label>
+            <input type="text" id="companyName" required class="w-full border border-slate-300 rounded px-3 py-2 text-sm" placeholder="Mehta Hydraulics Pvt Ltd" />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Work Email *</label>
+            <input type="email" id="clientEmail" required class="w-full border border-slate-300 rounded px-3 py-2 text-sm" placeholder="purchase@company.com" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Phone / WhatsApp *</label>
+            <input type="tel" id="clientPhone" required class="w-full border border-slate-300 rounded px-3 py-2 text-sm" placeholder="+91 98765 43210" />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Part / Material Grade</label>
+            <input type="text" id="partMaterial" class="w-full border border-slate-300 rounded px-3 py-2 text-sm" placeholder="e.g., SS316 Hex Adapter" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Estimated Batch Quantity</label>
+            <input type="number" id="batchQty" class="w-full border border-slate-300 rounded px-3 py-2 text-sm" placeholder="500" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Project Specifications / Notes *</label>
+          <textarea id="projectNotes" rows="3" required class="w-full border border-slate-300 rounded px-3 py-2 text-sm" placeholder="Mention tolerances, surface finish, or target delivery timeline..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded text-sm">
+          Submit Quote Request
+        </button>
+      </form>
+
+      <!-- Confirmation Banner -->
+      <div id="rfqSuccess" class="hidden mt-4 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded text-sm"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm py-8 px-4 text-center">
+    <p>© 2026 Apex Precision Components • GIDC Industrial Estate, Vadodara, Gujarat</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
